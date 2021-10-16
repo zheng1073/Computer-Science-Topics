@@ -64,3 +64,13 @@ Components of the use case diagram:
 - **Extend**: the extended use case will work like the base case except new steps will be inserted in the extended use case
 
 ### Class Diagram
+Shows how different entities relate to each other. It describes the attributes and operations of a class and the constraits imposed on the system. 
+
+Relationshps between classes:
+- **Association**: Link between two classes to show they're communicating with each other; Usually bi-directional
+- **Multiplicity**: Indicates how many instances of a class participate in the relationship. 
+- **Aggregation**: Implies a relationship where the child can exist independently of the parent.
+- **Composition**: Child class's instance lifecycle is dependent on the parent class's instance lifecycle. 
+- **Generalization**: Combining similar classes of objects into a single, more general class.
+- **Dependency**: When one class uses/depends on another class.
+- **Abstract Class**: 
