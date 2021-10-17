@@ -191,22 +191,29 @@ class Date {
   private int day;
   private int month;
   private int year;
+  private String event;
 
 
   // Default constructor
   public Date() {
     // We must define the default values for day, month, and year
-    day = 0;
-    month = 0;
-    year = 0;
+    this.day = 0;
+    this.month = 0;
+    this.year = 0;
   }
   
   // Parameterized constructor
   public Date(int d, int m, int y){
     // The arguments are used as values
-    day = d;
-    month = m;
-    year = y;
+    this.day = d;
+    this.month = m;
+    this.year = y;
+  }
+  
+  // Parameterized constructor
+  public Date(int day, int month, int year, String event){
+    this(day, month, year); // calling the constructor
+    this.event = event;
   }
 
   // A simple print function
@@ -220,11 +227,15 @@ class Demo {
   
   public static void main(String args[]) {
     // Call the Date constructor to create its object;
-    Date date = new Date(); // Object created with default values!
-     Date date = new Date(1, 8, 2018); // Object created with specified values! // Object created with default values!
-    date.printDate();
+    Date date1 = new Date(); // Object created with default values!
+    Date date2 = new Date(1, 8, 2018); // Object created with specified values! // Object created with default values!
+    date1.printDate();
+    date2.printDate();
   }
   
 }
 ```
-### **this** Reference Variable
+### this Reference Variable
+The **this** reference variable refers to the class object itself. 
+
+The this keyword followed by parentheses means that another constructor in the same Java class is being called.
