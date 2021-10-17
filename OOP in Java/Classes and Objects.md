@@ -42,5 +42,19 @@ class Cop {
 }
 ```
 ### Public
-A public
+A public member can be directly accessed by anything which is in the same scope as the class object.
+```java
+class Cop {
+  private int gun; // We have explicitly defined that the variable is private
+  
+  public int getGun(){
+    return gun;  // The private variable is directly accessible over here!
+  }
+}
+
+Cop c = new Cop(); // Object created
+c.getGun(); // Can access the gun
+c.gun = 0; // This would cause an error since gun is private
+```
 ### Protected
+
