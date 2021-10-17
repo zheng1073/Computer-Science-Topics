@@ -182,3 +182,49 @@ Benefits of method overloading:
 - **Polymorphism** 
 
 ## Constructors
+- Constructors are used to construct the object of a class. 
+- A constructors name must be the same as the name of the class
+
+```java
+class Date {
+
+  private int day;
+  private int month;
+  private int year;
+
+
+  // Default constructor
+  public Date() {
+    // We must define the default values for day, month, and year
+    day = 0;
+    month = 0;
+    year = 0;
+  }
+  
+  // Parameterized constructor
+  public Date(int d, int m, int y){
+    // The arguments are used as values
+    day = d;
+    month = m;
+    year = y;
+  }
+
+  // A simple print function
+  public void printDate(){ 
+    System.out.println("Date: " + day + "/" + month + "/" + year);
+  }
+  
+}
+
+class Demo {
+  
+  public static void main(String args[]) {
+    // Call the Date constructor to create its object;
+    Date date = new Date(); // Object created with default values!
+     Date date = new Date(1, 8, 2018); // Object created with specified values! // Object created with default values!
+    date.printDate();
+  }
+  
+}
+```
+### **this** Reference Variable
