@@ -85,3 +85,100 @@ class Thief{
 The Thief class will throw a compile-time error because it is trying to access the fire() method of the Cop class which is defined in a different package.
 ### Default
 The default access is similar to the protected. It also has package-level access, but it also applies to inherited classes as well, unlike protected.
+
+## Fields
+Fields --> Data members inside a class. 
+```java
+public class Car {
+  
+  static int  speed;
+  int  totalSeats;  // non static
+  static int  fuelCapacity;
+  final int year = 2020;
+  
+}
+```
+Types of fields:
+1. **Static**
+- A static field resides in a class. 
+- All the objects we create will share this field and its value.
+```java
+// Static fields are accessible in the main
+System.out.println(Car.speed);
+System.out.println(Car.capacity);
+```
+2. **Non-Static**
+- Non-static fields are located in the instances of the class. 
+- Each instance of the class can have its own values for these fields.
+- As non-static fields doesn’t reside in the class, so we need an instance of the class to access non-static fields.
+```java
+Car obj1 = new Car();
+
+System.out.println(obj1.speed);
+System.out.println(obj1.capacity);
+```
+3. **Final**
+- A final field cannot have its value changed once it is assigned.
+- s
+```java
+class Car {
+  // Final variable capacity
+  final int capacity = 4;
+}
+class Demo {
+   public static void main() { 
+      Car car = new Car();
+      // COMPLILATION ERROR: can't assign a value to final variable capacity.
+      car.capacity = 5; // Trying to change the capacity value
+   }
+}
+```
+## Methods
+A method is a group of statements that performs some operations and may or may not return a result.
+
+### Method Overloading
+Redefine a method several times and give it different arguments and method types to make it perform different operations.
+```java
+class Calculator {
+
+  public double product(double x, double y) {
+    return x * y;
+  }
+
+  // Overloading the function to handle three arguments
+  public double product(double x, double y, double z) {
+    return x * y * z;
+  }
+
+  // Overloading the function to handle int
+  public int product(int x, int y){
+    return x * y;
+  }
+
+}
+
+class Demo {
+  
+  public static void  main(String args[]) {
+    Calculator cal = new Calculator();
+    
+    double x = 10;
+    double y = 20;
+    double z = 5;
+    
+    int a = 12;
+    int b = 4;
+    
+    System.out.println(cal.product(x, y));
+    System.out.println(cal.product(x, y, z));
+    System.out.println(cal.product(a, b));
+  }
+  
+}
+```
+Methods with no arguments and differ only in return types cannt be overloaded. 
+
+Benefits of method overloading:
+- **Polymorphism** 
+
+## Constructors
