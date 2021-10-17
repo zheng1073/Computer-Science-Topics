@@ -43,6 +43,6 @@ class Student{
   }
   
   public double calcTotal() {
-    return this.mark1 + this.mark2;
+    return mark1 + mark2;
   }
 }
