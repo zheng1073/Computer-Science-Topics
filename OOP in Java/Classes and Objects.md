@@ -34,7 +34,13 @@ class Car {
 Specify restrictions on different data members and member functions.
 
 ### Private
-
+A private member cannot be accessed directly from outside the class. The aim is to keep it hidden from the users and other classes.
+```java
+class Cop {
+  private int gun; // We have explicitly defined that the variable is private
+  // ...
+}
+```
 ### Public
-
+A public
 ### Protected
