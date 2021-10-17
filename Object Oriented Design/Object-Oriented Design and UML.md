@@ -13,7 +13,7 @@ OOP organizes the program to combine data and functionality and wrap it inside s
   - Hide all but the relevant data about an object to reduce the complexity of the system
   - Hide internal implementation details of objects and only revealing operations that are relevant to other objects
 3. **Inheritance**:
-  - Create new classes from existing ones
+  - Create new classes from existing classes
 4. **Polymorphism**:
   - Ability of object to take different forms to respond to the same message in different ways. 
   - Example: In a chess game, a chess piece can take many forms (bishop, castle, knight) and all these pieces will respond differently to the "move" message
