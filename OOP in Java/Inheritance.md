@@ -152,12 +152,121 @@ super(parameters); //calls the parameterized constructor of the SuperClass with 
 
 ### Types of Inheritance 
 1. Single
-- asd 
+- There is only a single class extending from another class.
+```java
+class Vehicle {          //Base Vehicle class  
+
+  private int topSpeed;
+  public void setTopSpeed(int speed) {
+    this.topSpeed=speed;
+    System.out.println("The top speed is set to: "+ topSpeed);
+  }
+
+} 
+
+class Car extends Vehicle { // sub class Car extending from Vehicle
+
+  public void openTrunk() {  
+    System.out.println("The Car trunk is Open Now"); 
+  } 
+  
+} 
+
+class Main {
+
+  public static void main(String[] args) {  
+    Car corolla = new Car(); 
+    corolla.setTopSpeed(220);
+    corolla.openTrunk();
+  } 
+  
+}
+```
 2. Multi-level
-- asd
+- Ascenerio where a class is derived from another class where that class is derived from another class. 
+```java
+class Vehicle {          //Base Vehicle class  
+
+  private int topSpeed;
+
+  public void setTopSpeed(int speed) {
+    this.topSpeed=speed;
+    System.out.println("The top speed is set to: "+ topSpeed);
+  }
+  
+}
+
+class Car extends Vehicle { // Derived from Vehicle Base for Prius
+
+  public void openTrunk() {
+    System.out.println("The Car trunk is Open Now!"); 
+  } 
+
+} 
+
+class Prius extends Car {// Derived from Prius & can be base to any further class
+
+  public void turnOnHybrid() {
+    System.out.println("The Hybrid mode is turned on!"); 
+  } 
+
+} 
+
+class Main {
+
+  public static void main(String[] args) {
+    Prius priusPrime = new Prius(); 
+    priusPrime.setTopSpeed(220);
+    priusPrime.openTrunk();
+    priusPrime.turnOnHybrid();
+  }
+
+}
+```
 3. Hierarchical
-- asd
+- When more than one classes inherit from the same class.
+```java
+class Vehicle {          //Base Vehicle class  
+
+  private int topSpeed;
+
+  public void setTopSpeed(int speed) {
+    this.topSpeed=speed;
+    System.out.println("The top speed of "+getClass().getSimpleName()+" is set to: "+ topSpeed);
+  }
+
+} 
+
+class Car extends Vehicle { // Derived from Vehicle Base for Prius
+
+  //implementation of Car class
+} 
+
+class Truck extends Vehicle {// Derived from Prius can be base to any further class
+
+  //implementation of Truck class
+} 
+
+class Main {
+
+  public static void main(String[] args) {
+    Car corolla = new Car(); 
+    corolla.setTopSpeed(220);
+
+    Truck volvo = new Truck();
+    volvo.setTopSpeed(120);
+  } 
+
+}
+```
 4. Multiple
-- asd
+- When a class is derived from more than one base class; when a class has more than one parent class.
 5. Hybrid
-- asd
+- Combination of Multiple and Multi-level inheritance.
+
+** Multiple and Hybrid inheritance are applicable using interfaces only.
+
+### Advantages of Inheritance
+- make code reuseable aka avoid redundant coding
+- **Extensibility**: extend the base class logic as per the business logic of the derived class.
+- **Data Hiding**
