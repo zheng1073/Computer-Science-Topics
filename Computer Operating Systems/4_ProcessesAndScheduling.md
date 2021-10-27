@@ -31,3 +31,10 @@ Starvation --> lower priorities can starve for CPU time
 Aging --> raise priority over time to prevent starvation 
 
 **Convoy Effect** --> Short Processes behind long processes
+
+### Multilevel Queue (MLQ)
+- system has different processes with different scheduling algorithms 
+- queue will stick with the same scheduling algorithm
+
+### Multilevel Feedback Queue (MLFQ)
+- a queue might migrate to use a different algorithm
