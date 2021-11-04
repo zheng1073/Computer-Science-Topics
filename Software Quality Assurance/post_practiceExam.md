@@ -23,13 +23,17 @@ Quality methods:
 - code inspection - programmer narrates, statement by statement, the logic of a program as an error detection technique
 - black box testing (software)
   - focuses on behavior of the software/ external and end-user perspective 
+  - data driven 
   - verify the usability of a product as it is being delivered to ensure overall design and functionality without regard to the internal functioning of the code. 
   - post informal review  and the development team has to evaluate the module from an end user perspective. 
+  - logic driven
   - aid in deriving test data based on analysis of the requirements specifications
   - without underlying code
+  - low time consuming
 - white box testing (software)
   - test internal functioning of the system 
   - much of the code will be executed 
+  - high time consuming
 
 Types of reviews:
 - walkthrough
@@ -56,9 +60,14 @@ Types of reviews:
 practices:
 - backtracking
 - induction
+  - look at symptoms of the error from 1+ test cases and look for relationships 
 - deduction
+  - start from general theories aka all causes of the error and then perform processes of elimination 
+  - refinement 
 - error analysis
 - brute force
+  - most common and least effective
+  - memory dump, scattering print statements, automated debugging tools 
 
 ## Test Types
 
