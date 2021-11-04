@@ -30,7 +30,9 @@ Quality methods:
   - verify the usability of a product as it is being delivered to ensure overall design and functionality without regard to the internal functioning of the code. 
   - post informal review  and the development team has to evaluate the module from an end user perspective. 
   - aid in deriving test data based on analysis of the requirements specifications
+  - without underlying code
 - white box testing
+  - much of the code will be executed 
 - peer reviews
 
 Types of reviews:
@@ -39,17 +41,8 @@ Types of reviews:
 - inspection
   - need a moderator to review 
 - end user
-
-Types of test:
-- integration
-  - system design phase 
-- module
-- system
-- acceptance
-  - requirements phase 
-- regression 
-  - implementation phase
-  - change part of the project that has already been written and tested 
+- decision/condition coverage
+  -  Exercise all decision outcomes and each condition at least once.
 
 ### Bug Management Best Practices
 !! Document each issue with details in a bug report
@@ -65,11 +58,22 @@ practices:
 ## Test Types
 
 ### Testing Basics
-
-## Test and Review Tools
-
-### Tool Foundations
-
-## Unit Tests
-
-### Conducting a Unit Test
+Types of test:
+- integration
+  - system design phase 
+- module
+- system
+- acceptance
+  - requirements phase 
+  - compare the program to its initial requirements
+- regression 
+  - implementation phase
+  - change part of the project that has already been written and tested 
+- function
+- comparison
+- unit
+  - makes sure a module meets quality standards
+- performance
+  - meets response and throughput requirements 
+- usability
+  - to evaluate a product by testing it with representative users 
