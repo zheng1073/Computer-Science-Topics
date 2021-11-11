@@ -44,9 +44,36 @@
 - programmer should avoid testing his/her own program
 - testing protocol should include a thorough inspection of the results of each test
 - test cases written for input conditions that are invalid, valid, unexpected, and expected
-- examine a program to see if it does NOT do what it is supposed to AND 
+- examine a program to see if it does NOT do what it is supposed to AND if it does what it's NOT supposed to do 
+- avoid throwaway test cases unless the program is truly a throwaway program
+- Do not plan testing effort assuming no errors will be found
+
+
+- **Logic Coveragge** -->  Tests that exercise all decision point outcomes at least once, and ensure that all statements or entry points are executed at least once
+- **Equivalence Partitioning** --> defines condition or error classes to reduce number of finite tests. 
+  - assume that a test of a representative value within a class also tests all values or conditions within that class  
+- **Boundary Value Analysis** --> Tests each edge condition of an equivalence class; also considers output equivalence classes as well as input classes.
+- **Cause-Effect Graphing** -->  Produces Boolean graphical representations of potential test case results to aid in selecting efficient and complete test cases.
+- **Error Guessing** --> Produces test cases based on intuitive and expert knowledge of test team members to define potential software errors to facilitate efficient test case design.
 
 ## Module Testing
+Requirements for a module test:
+1. Specifiction for the module
+- module's input, output parameters, and its function
+2. Module's source code
+
+
+- Analyze module's logic with white-box methods
+- then supplement with black-box methods
+
+
+- Incremental – modules are tested in steps
+  - Top-down – start at main entry point
+  - Bottom-up – start with terminal node modules
+- Non-Incremental
+- Module test is to find discrepancies between the program's modules and their interface specifications.  
+- Function test is to show that a program does not match its external specifications.
+- System test is to show that the product is inconsistent with its original objectives.
 
 ## Categories of Test Cases
 
