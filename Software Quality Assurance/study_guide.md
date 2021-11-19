@@ -104,7 +104,7 @@ Test cases:
 - documentation
   - Validate the accuracy of all user documentation.
 - procedure
-  - 	Determine the accuracy of special procedures required to use or maintain the program.
+  - Determine the accuracy of special procedures required to use or maintain the program.
 
 ### Test Completion Criteria
 The completion criteria typically used in practice are both meaningless and counterproductive. The two most common criteria are these:
