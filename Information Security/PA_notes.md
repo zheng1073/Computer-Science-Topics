@@ -32,11 +32,20 @@ Tools:
 Attacks:
 - SQL Injection 
   - server-side web attack 
+  - use SQL code for backend database manipulation to access info 
 - Cross-site scripting
+  - inject client-side scripts into web pages 
+  - potentially used to bypass access control 
 - Cross-site request forgery
+  - aka one click attack
+  - unauthorized commands are submitted from a user that the web application trusts
+  - make users do stuff they don't intend to 
 - Clickjacking
+  - tricking users to click on something different from what's perceived 
 - Extraneous Files
+  - filesnot part of their database 
 - Spear phishing
+  - targeted attack with the goal of recieving confidential information 
 
 Defense Concepts:
 - File Encryption
@@ -44,20 +53,16 @@ Defense Concepts:
 - Antivirus Software
 - Account Permissions
 
-Parkerian Hexad principles:
-- Utility
-- Possession
-- Authenticity
-- Integrity
-
 # Impact of Policies and Procedures
-
 ## Policies and Procedures
 
 Vulnerabilities:
 - Pretexting
+  - lure victim into a vulnerable situation and trick them into giving private information 
 - Phishing
+  - attacker sends a fraudulent message designed to trick a human victim into revealing sensitive information 
 - Baiting
+  - attacker uses a false promise to lure victims into a trap 
 - Tailgaiting
 
 Control Poilies:
@@ -68,20 +73,23 @@ Control Poilies:
 
 Control Types:
 - Deterrent
+  - discourage someone from doing something 
 - Detective
 - Preventive
 - Active
 
 # Protecting Organizational Assets
-
 ## Protecting Critical Information
 
 Protection Techniques:
 - Certificates
 - Data Encryption
 - File Encryption
+  - transforming  
 - File Compression
+  - encoding technique to compress file 
 - RAID
+  - data storage virtualization technology 
 - Network Encryption
 - Network Compression
 
@@ -91,23 +99,41 @@ Protection Techniques:
 
 CIA Triad Principles:
 - Confidentiality
+  - authorized individuals can view sensitive/classified data
+  - prevention --> use encryption techniques like AES and DES
+  - Or use a VPN 
 - Integrity
+  - make sure data has not been modified
+  - can use a hash function --> SHA and MD5
 - Availability
+  - data available to its users 
 
 ## Cryptographic Tools
 
 Security Solutions:
 - SSH/FTP
+  - file transfer   
 - VPN
+  - data flow over network 
 - AES
+  - Advanced Encryption Standard 
 - SSL/TLS
+  - transport layer, secured sockets 
 
 ## Parkerian Hexad
 
-Parkerian Hexad
+Parkerian Hexad:
+- Confidentiality
+- Availability
+- Integrity
+- Utility
+- Possession (or control)
+  -  loss of control or possession of information but does not involve the breach of confidentiality
+- Authenticity
+  - verify ownership
+  - digital signatures  
 
 # Security Guidelines
-
 ## Compliance Guidelines
 
 Regulations:
